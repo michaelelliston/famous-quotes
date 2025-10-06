@@ -14,11 +14,11 @@ public class FamousQuotes {
             selection = Integer.parseInt(input);
 
             try {
-                if (selection > 0 && selection < 4) {
-                    System.out.println("Here is your selected quote: " + quotes[selection - 1] + '"'); // Prints the selected quote
-                } else if (selection == 4) {
-                    System.out.println("Here is a random quote: " + quotes[(int) (Math.random() * 3)]);
-                }
+              if (selection == 4) {
+                System.out.println("Here is a random quote: " + quotes[(int) (Math.random() * 3)]); // Prints the selected quote
+                } else {
+                  System.out.println("Here is your selected quote: " + quotes[selection - 1] + '"');
+              }
             } catch (ArrayIndexOutOfBoundsException e) {            // Catches a number input out of range and prints this message
                 System.out.println("The number you entered was out of the requested range.");
                 e.printStackTrace();
