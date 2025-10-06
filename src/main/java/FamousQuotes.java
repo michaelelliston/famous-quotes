@@ -12,6 +12,12 @@ public class FamousQuotes {
         input = myScanner.nextLine();
         selection = Integer.parseInt(input);
 
-        System.out.println("Here is your selected quote: \"" + quotes[selection - 1] + '"'); // Prints the selected quote
+        try {
+            System.out.println("Here is your selected quote: \"" + quotes[selection - 1] + '"'); // Prints the selected quote
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("The number you entered was out of the requested range.");
+            e.printStackTrace();
+        }
     }
 }
