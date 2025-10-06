@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class FamousQuotes {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
-        String input = "";
-        int selection = 0;
+        String input;
+        int selection;
         // Creating a String array called quotes with 3 values.
         String[] quotes = {"That wizard came from the Moon.", "I am a wall. And walls don't move. Because walls don't care.", "I don't have time to explain why I don't have time to explain."};
 
